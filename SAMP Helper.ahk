@@ -1,7 +1,7 @@
 ; ##########################
 ; ##### SAMP UDF R15.1 #####
 ; #   SAMP Version: 0.3.7  #
-; #Добавлен SA-MP-UDF-Addon#
+; #Г„Г®ГЎГ ГўГ«ГҐГ­ SA-MP-UDF-Addon#
 ; ##########################
 
 ; SAMP-RP CHat Colors
@@ -173,12 +173,12 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # 														                                                                    #
 ; # SAMP-Funktionen:                                                                                                            #
-; #     - IsSAMPAvailable()                         PrГѓВјft, ob man in den Chat schreiben kann & ob GTA geladen ist            #
-; #     - isInChat()                                PrГѓВјft, ob der Spieler gerade chattet oder in einem Dialog ist            #
+; #     - IsSAMPAvailable()                         PrГѓВѓГ‚Вјft, ob man in den Chat schreiben kann & ob GTA geladen ist            #
+; #     - isInChat()                                PrГѓВѓГ‚Вјft, ob der Spieler gerade chattet oder in einem Dialog ist            #
 ; #     - getUsername()                             Liest den Namen des Spielers aus                                            #
 ; #     - getId()                                   Liest die Id des Spielers aus                                               #
 ; #     - SendChat(wText)                           Sendet eine Nachricht od. einen Befehl direkt an den Server                 #
-; #     - addChatMessage(wText)                     FГѓВјgt eine Zeile in den Chat ein (nur fГѓВјr den Spieler sichtbar)        #
+; #     - addChatMessage(wText)                     FГѓВѓГ‚Вјgt eine Zeile in den Chat ein (nur fГѓВѓГ‚Вјr den Spieler sichtbar)        #
 ; #     - showGameText(wText, dwTime, dwTextsize)   Zeigt einen Text inmitten des Bildschirmes an  					            #
 ; #     - playAudioStream(wUrl)                     Spielt einen "Audio Stream" ab                                              #
 ; #     - stopAudioStream()                         Stoppt den aktuellen Audio Stream                                           #
@@ -206,17 +206,17 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # SAMP Dialog Funktionen (v0.3.7):																	                        #
 ; # --------------------------------------------------------------------------------------------------------------------------- #
-; #	- isDialogOpen() - PrГјft, ob gerade ein Dialog angezeigt wird (gibt true oder false zurГјck)	                       		#
+; #	- isDialogOpen() - PrГѓВјft, ob gerade ein Dialog angezeigt wird (gibt true oder false zurГѓВјck)	                       		#
 ; #	- getDialogStyle() - Liest den Typ des (zuletzt) angezeigten Dialogs aus (0-5)                      						#
 ; #	- getDialogID() - Liest die ID des (zuletzt) angezeigten Dialogs aus (auch vom Server)	                        			#
 ; #	- setDialogID(id) - Setzt die ID des (zuletzt) angezeigten Dialogs auf [id]				                        			#
-; #	- getDialogIndex() - Liest die (zuletzt) ausgewГ¤hlte Zeile des Dialogs aus 				                        		#
-; #	- getDialogCaption() - Liest die Гњberschrift des (zuletzt) angezeigten Dialogs aus 			                       		#
+; #	- getDialogIndex() - Liest die (zuletzt) ausgewГѓВ¤hlte Zeile des Dialogs aus 				                        		#
+; #	- getDialogCaption() - Liest die ГѓВњberschrift des (zuletzt) angezeigten Dialogs aus 			                       		#
 ; #	- getDialogText() - Liest den Text des (zuletzt) angezeigten Dialogs aus (auch bei Listen)                              	#
 ; #	- getDialogLineCount() - Liest die Anzahl der Zeilen/Items des (zuletzt) angezeigten Dialogs aus                        	#
 ; #	- getDialogLine(index) - Liest die Zeile an der Stelle [index] mittels getDialogText aus 		                        	#
-; #	- getDialogLines() - Liest die Zeilen mittels getDialogText aus (gibt ein Array zurГјck)			                      	#
-; #	- isDialogButton1Selected() - PrГјft, ob Button1 des Dialogs ausgewГ¤hlt ist 						                       	#
+; #	- getDialogLines() - Liest die Zeilen mittels getDialogText aus (gibt ein Array zurГѓВјck)			                      	#
+; #	- isDialogButton1Selected() - PrГѓВјft, ob Button1 des Dialogs ausgewГѓВ¤hlt ist 						                       	#
 ; # - getDialogStructPtr() - Liest den Base Pointer zur Dialogstruktur aus (intern genutzt)			                        	#
 ; #																									                        	#
 ; #	- showDialog(style, caption, text, button1, button2, id) - Zeigt einen Dialog an (nur lokal)	                        	#
@@ -227,8 +227,8 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; #	    - getTargetPed(dwPED)   			        Zeigt die PED-ID, des Spielers, auf den man zielt.                          #
 ; #     - getPedById(dwId)                          Zeigt die PED-Id zu der Id.                                                 #
 ; #     - getIdByPed(dwId)                          Zeigt die Id der PED-Id.                                                    #
-; #     - getStreamedInPlayersInfo()                Zeigt Informationen ГѓВјber die gestreamten Spieler.                        #
-; #     - callFuncForAllStreamedInPlayers()         FГѓВјhrt bestimmte Funktionen, fГѓВјr die gestreamten Spieler aus.          #
+; #     - getStreamedInPlayersInfo()                Zeigt Informationen ГѓВѓГ‚Вјber die gestreamten Spieler.                        #
+; #     - callFuncForAllStreamedInPlayers()         FГѓВѓГ‚Вјhrt bestimmte Funktionen, fГѓВѓГ‚Вјr die gestreamten Spieler aus.          #
 ; #	    - getDist(pos1,pos2)   			            Rechnet den Abstand zwischen zwei Positionen aus.                           #
 ; #     - getClosestPlayerPed()                     Zeigt die PED-ID, des Spielers, der am nahesten zu einem steht.             #
 ; #     - getClosestPlayerId()                      Zeigt die Id, des Spielers, der am nahesten zu einem steht.                 #
@@ -279,14 +279,14 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; # 														                                                                    #
 ; # Spielerfunktionen:                                                                                                          #
 ; #     - getPlayerHealth()                         Ermittelt die HP des Spielers                                               #
-; #     - getPlayerArmour()                         Ermittelt den RГѓВјstungswert des Spielers                                  #
+; #     - getPlayerArmour()                         Ermittelt den RГѓВѓГ‚Вјstungswert des Spielers                                  #
 ; # 	- getPlayerInteriorId()			            Ermittelt die Interior ID wo der Spieler ist 		                        #
 ; # 	- getPlayerSkinId()			                Ermittelt die Skin ID des Spielers           		                        #
 ; # 	- getPlayerMoney() 			                Ermittelt den Kontostand des Spielers (nur GTA Intern)                      #
 ; #	    - getPlayerWanteds()			            Ermittelt die Wantedanzahl des Spielers (nur bis 6 Wanteds)                 #
 ; #	    - getPlayerWeaponId()			            Ermittelt die Waffen ID des Spielers                                        #
 ; #	    - getPlayerWeaponName()			            Ermittelt den Namen, der Waffe des Spielers                                 #
-; #	    - getPlayerState()			                Ermittelt den "Status" des Spielers (Zu FuГѓЕё, Fahrer, Tot)                #
+; #	    - getPlayerState()			                Ermittelt den "Status" des Spielers (Zu FuГѓВѓГ…Вё, Fahrer, Tot)                #
 ; #	    - getPlayerMapPosX()			            Ermittelt die X-Position auf der Map im Menu                                #
 ; #	    - getPlayerMapPosY()			            Ermittelt die Y-Position auf der Map im Menu                                #
 ; #	    - getPlayerMapZoom()			            Ermittelt den Zoom auf der Map im Menu                                      #
@@ -314,26 +314,26 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; # 														                                                                    #
 ; # Standpunktbestimmung:                                                                                                       #
 ; #     - getCoordinates()                          Ermittelt die aktuelle Position (Koordinaten)                               #
-; #	    - getPlayerPos(X,Y,Z) 			            siehe oben drГѓВјber 						                                #
+; #	    - getPlayerPos(X,Y,Z) 			            siehe oben drГѓВѓГ‚Вјber 						                                #
 ; # 														                                                                    #
 ; # --------------------------------------------------------------------------------------------------------------------------- #
 ; # 														                                                                    #
 ; #     - initZonesAndCities()                      Initialisiert eine Liste aller Standartgebiete                              #
-; #                                                 (Voraussetzung fГѓВјr die folgenden Funktionen dieser Kategorie)            #
+; #                                                 (Voraussetzung fГѓВѓГ‚Вјr die folgenden Funktionen dieser Kategorie)            #
 ; #     - calculateZone(X, Y, Z)                    Bestimmt die Zone (= Stadtteil) aus den geg. Koordinaten                    #
 ; #     - calculateCity(X, Y, Z)                    Bestimmt die Stadt aus den geg. Koordinaten                                 #
 ; #     - getCurrentZonecode()                      Ermittelt die aktulle Zone in Kurzform                                      #
-; #     - AddZone(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВјgt eine Zone zum Index hinzu                                           #
-; #     - AddCity(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВјgt eine Stadt zum Index hinzu                                          #
-; #	    - IsPlayerInRangeOfPoint(X, Y, Z, Radius)   Bestimmt ob der Spieler in der NГѓВ¤he der Koordinaten ist                  #
-; #	    - IsIsPlayerInRangeOfPoint2D(X, Y, Radius)  Bestimmt ob der Spieler in der NГѓВ¤he der Koordinaten ist                  #
+; #     - AddZone(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВѓГ‚Вјgt eine Zone zum Index hinzu                                           #
+; #     - AddCity(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВѓГ‚Вјgt eine Stadt zum Index hinzu                                          #
+; #	    - IsPlayerInRangeOfPoint(X, Y, Z, Radius)   Bestimmt ob der Spieler in der NГѓВѓГ‚В¤he der Koordinaten ist                  #
+; #	    - IsIsPlayerInRangeOfPoint2D(X, Y, Radius)  Bestimmt ob der Spieler in der NГѓВѓГ‚В¤he der Koordinaten ist                  #
 ; #	    - getPlayerZone()                   				                                                                    #
 ; #	    - getPlayerCity()                   					                                                                #
 ; # 														                                                                    #
 ; ###############################################################################################################################
 ; # Sonstiges:                                                                                                                  #
 ; #     - checkHandles()                                                                                                        #
-; #     - AntiCrash()								Hilft gegen das abstГѓВјrzen bei Warningscodes                              #
+; #     - AntiCrash()								Hilft gegen das abstГѓВѓГ‚Вјrzen bei Warningscodes                              #
 ; ###############################################################################################################################
 ; # Speicherfunktionen (intern genutzt):                                                                                        #
 ; # Memory Functions:                                                                                                           #
@@ -364,37 +364,37 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # by {CM}MurKotik                                                                                                             #
 ; # Samp-UDF-Addon function        
-; #     - setCoordinates(x, y, z, Interior)         - Телепорт персонажа 
-; #     - getIP()                                   - Выдаёт IP Адрес сервера                                                   #
-; #     - setIP(IP)                                 - Меняет IP Адрес Сервера                                                   #
-; #     - getHostname()                             - Выдаёт Имя сервера                                                        #
-; #     - setUsername(Username)                     - Установить новый Ник                                                      #
-; #     - connect(IP)                               - Подключится к серверу по IP адресу                                        #
-; #     - colorhud(Цвет)                            - Менякет зелёный цвет в игре на указаные                                   #
-; #	    - setTime(hour)	                            - Устанавливает время на сервере                                            #
-; #	    - getSkinID()   	                        - Выдаёт ID Скина вашего персоажа                                           #
-; #	    - getDialogTitle() 	                        - Выдаёт Заголовок последнего диолога                                       #
-; #	    - getPlayerColor(id)                        - Выдаёт ID Цвета ника игрока по ID                                         #
-; #	    - setPlayerColor(id,color)                  - Устанавливает цвет ника игроку по его ID                                  #
-; #	    - colorToStr(color)	                        - Конвертация цвета из десятичной в шестнадцатиричную                       #
-; #	    - getWeaponId() 	                        - Выдаёт ID оружия вашего персонаха                                         #
-; #     - restartGameEx()                           - Рестарт игры (Не отключает от сервера)                                    #
-; #     - setrestart()                              - Установить рестартинг (применить)                                         #
-; #     - disconnectEx()                            - Отключение от сервера                                                     #
-; #     - writeFloat(hProcess, dwAddress, wFloat)   - Работа с памятью процесса в десятичной                                    #
-; #     - writeByte(hProcess, dwAddress, wInt)      - Работа с памятью процесса в десятичной                                    #
-; #     - FloatToHex(value)                         - Работа с памятью процесса в шестнадцатиричной                             #
-; #     - writeByte(hProcess, dwAddress, wInt)      - Работа с памятью процесса в шестнадцатиричной                             #
-; #     - IntToHex(int)                             - Работа с памятью процесса в шестнадцатиричной                             #
+; #     - setCoordinates(x, y, z, Interior)         - Г’ГҐГ«ГҐГЇГ®Г°ГІ ГЇГҐГ°Г±Г®Г­Г Г¦Г  
+; #     - getIP()                                   - Г‚Г»Г¤Г ВёГІ IP ГЂГ¤Г°ГҐГ± Г±ГҐГ°ГўГҐГ°Г                                                    #
+; #     - setIP(IP)                                 - ГЊГҐГ­ГїГҐГІ IP ГЂГ¤Г°ГҐГ± Г‘ГҐГ°ГўГҐГ°Г                                                    #
+; #     - getHostname()                             - Г‚Г»Г¤Г ВёГІ Г€Г¬Гї Г±ГҐГ°ГўГҐГ°Г                                                         #
+; #     - setUsername(Username)                     - Г“Г±ГІГ Г­Г®ГўГЁГІГј Г­Г®ГўГ»Г© ГЌГЁГЄ                                                      #
+; #     - connect(IP)                               - ГЏГ®Г¤ГЄГ«ГѕГ·ГЁГІГ±Гї ГЄ Г±ГҐГ°ГўГҐГ°Гі ГЇГ® IP Г Г¤Г°ГҐГ±Гі                                        #
+; #     - colorhud(Г–ГўГҐГІ)                            - ГЊГҐГ­ГїГЄГҐГІ Г§ГҐГ«ВёГ­Г»Г© Г¶ГўГҐГІ Гў ГЁГЈГ°ГҐ Г­Г  ГіГЄГ Г§Г Г­Г»ГҐ                                   #
+; #	    - setTime(hour)	                            - Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ ГўГ°ГҐГ¬Гї Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ                                            #
+; #	    - getSkinID()   	                        - Г‚Г»Г¤Г ВёГІ ID Г‘ГЄГЁГ­Г  ГўГ ГёГҐГЈГ® ГЇГҐГ°Г±Г®Г Г¦Г                                            #
+; #	    - getDialogTitle() 	                        - Г‚Г»Г¤Г ВёГІ Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ ГЇГ®Г±Г«ГҐГ¤Г­ГҐГЈГ® Г¤ГЁГ®Г«Г®ГЈГ                                        #
+; #	    - getPlayerColor(id)                        - Г‚Г»Г¤Г ВёГІ ID Г–ГўГҐГІГ  Г­ГЁГЄГ  ГЁГЈГ°Г®ГЄГ  ГЇГ® ID                                         #
+; #	    - setPlayerColor(id,color)                  - Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ Г¶ГўГҐГІ Г­ГЁГЄГ  ГЁГЈГ°Г®ГЄГі ГЇГ® ГҐГЈГ® ID                                  #
+; #	    - colorToStr(color)	                        - ГЉГ®Г­ГўГҐГ°ГІГ Г¶ГЁГї Г¶ГўГҐГІГ  ГЁГ§ Г¤ГҐГ±ГїГІГЁГ·Г­Г®Г© Гў ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­ГіГѕ                       #
+; #	    - getWeaponId() 	                        - Г‚Г»Г¤Г ВёГІ ID Г®Г°ГіГ¦ГЁГї ГўГ ГёГҐГЈГ® ГЇГҐГ°Г±Г®Г­Г ГµГ                                          #
+; #     - restartGameEx()                           - ГђГҐГ±ГІГ Г°ГІ ГЁГЈГ°Г» (ГЌГҐ Г®ГІГЄГ«ГѕГ·Г ГҐГІ Г®ГІ Г±ГҐГ°ГўГҐГ°Г )                                    #
+; #     - setrestart()                              - Г“Г±ГІГ Г­Г®ГўГЁГІГј Г°ГҐГ±ГІГ Г°ГІГЁГ­ГЈ (ГЇГ°ГЁГ¬ГҐГ­ГЁГІГј)                                         #
+; #     - disconnectEx()                            - ГЋГІГЄГ«ГѕГ·ГҐГ­ГЁГҐ Г®ГІ Г±ГҐГ°ГўГҐГ°Г                                                      #
+; #     - writeFloat(hProcess, dwAddress, wFloat)   - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г  Гў Г¤ГҐГ±ГїГІГЁГ·Г­Г®Г©                                    #
+; #     - writeByte(hProcess, dwAddress, wInt)      - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г  Гў Г¤ГҐГ±ГїГІГЁГ·Г­Г®Г©                                    #
+; #     - FloatToHex(value)                         - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г  Гў ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­Г®Г©                             #
+; #     - writeByte(hProcess, dwAddress, wInt)      - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г  Гў ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­Г®Г©                             #
+; #     - IntToHex(int)                             - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г  Гў ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­Г®Г©                             #
 ; ###############################################################################################################################
 ; ###############################################################################################################################
 ; # by McFree                                                                                                            #
 ; # Samp-UDF-Addon function        
-; #     - getPlayerPosById(dwid)         - получить координаты персонажа по ID
-; #     - addChatMessageEx(Color, wText)         - Отправить фейк сообщение с полной заменой цвета (включая timestamp)
-; #     - HexToDec(Hex)         - Перевод шестнадцатиричного числа в десятичное
-; #     - hex2rgb(CR )      - Перевод шестнадцатиричного цвета в rgb строку (255,255,255)
-; #     - rgb2hex(R, G, B)         - Перевод RGB цвета в шестнадцатиричное значение (FFFFFF)
+; #     - getPlayerPosById(dwid)         - ГЇГ®Г«ГіГ·ГЁГІГј ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГЇГҐГ°Г±Г®Г­Г Г¦Г  ГЇГ® ID
+; #     - addChatMessageEx(Color, wText)         - ГЋГІГЇГ°Г ГўГЁГІГј ГґГҐГ©ГЄ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ Г± ГЇГ®Г«Г­Г®Г© Г§Г Г¬ГҐГ­Г®Г© Г¶ГўГҐГІГ  (ГўГЄГ«ГѕГ·Г Гї timestamp)
+; #     - HexToDec(Hex)         - ГЏГҐГ°ГҐГўГ®Г¤ ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­Г®ГЈГ® Г·ГЁГ±Г«Г  Гў Г¤ГҐГ±ГїГІГЁГ·Г­Г®ГҐ
+; #     - hex2rgb(CR )      - ГЏГҐГ°ГҐГўГ®Г¤ ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­Г®ГЈГ® Г¶ГўГҐГІГ  Гў rgb Г±ГІГ°Г®ГЄГі (255,255,255)
+; #     - rgb2hex(R, G, B)         - ГЏГҐГ°ГҐГўГ®Г¤ RGB Г¶ГўГҐГІГ  Гў ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ (FFFFFF)
 ; ###############################################################################################################################
 
 ; ##### Sa-mp-udf-addon by McFree #####
@@ -561,7 +561,7 @@ getIP() {
     return ipAddr
 }
 
-; Смена Ip Сервера
+; Г‘Г¬ГҐГ­Г  Ip Г‘ГҐГ°ГўГҐГ°Г 
 setIP(IP) {
     if(!checkHandles())
         return False
@@ -2109,7 +2109,7 @@ getTargetVehicleSpeedByPed(dwPED) {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВ¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВѓГ‚В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -2125,7 +2125,7 @@ getTargetVehicleSpeedById(dwId) {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВ¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВѓГ‚В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -3017,7 +3017,7 @@ getVehicleSpeed() {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВ¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВѓГ‚В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -4611,24 +4611,24 @@ __unicodeToAnsi(wString, nLen = 0) {
 #SingleInstance, Force
 #Persistent
 #NoEnv
-pver := "SAMP Helper 0.8"                                                                                                ;Версия!
+pver := "SAMP Helper 0.8"                                                                                                ;Г‚ГҐГ°Г±ГЁГї!
 ;####################################################################################
-MsgBox, %pver% запущен.`nПрограмма имеет способность сохранять настройки.`n  eCoolGe ©
+MsgBox, %pver% Г§Г ГЇГіГ№ГҐГ­.`nГЏГ°Г®ГЈГ°Г Г¬Г¬Г  ГЁГ¬ГҐГҐГІ Г±ГЇГ®Г±Г®ГЎГ­Г®Г±ГІГј Г±Г®ГµГ°Г Г­ГїГІГј Г­Г Г±ГІГ°Г®Г©ГЄГЁ.`n  eCoolGe В©
 ;####################################################################################
 RegRead, Autom, HKEY_CURRENT_USER, SAMP Helper, Autom
 RegRead, Type, HKEY_CURRENT_USER, SAMP Helper, Type
 ;####################################################################################
 Menu, Tray, NoStandard
-Menu, Tray, Add, Изменить параметры, Settings
-Menu, Tray, Add, Перезапустить программу, Restart
-Menu, Tray, Add, Связаться с автором, Author
-Menu, Tray, Add, Выйти из программы, Exit
+Menu, Tray, Add, Г€Г§Г¬ГҐГ­ГЁГІГј ГЇГ Г°Г Г¬ГҐГІГ°Г», Settings
+Menu, Tray, Add, ГЏГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГј ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі, Restart
+Menu, Tray, Add, Г‘ГўГїГ§Г ГІГјГ±Гї Г± Г ГўГІГ®Г°Г®Г¬, Author
+Menu, Tray, Add, Г‚Г»Г©ГІГЁ ГЁГ§ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г», Exit
 if (Autom = "" || Type = "") {
 	goto, Settings
 } else if (Autom != "" || Type != "") {
-    TrayTip, SAMP Helper, Сохраненные данные были загружены.
+    TrayTip, SAMP Helper, Г‘Г®ГµГ°Г Г­ГҐГ­Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ ГЎГ»Г«ГЁ Г§Г ГЈГ°ГіГ¦ГҐГ­Г».
 	Sleep, 1000
-	TrayTip, SAMP Helper, Программа запущена`, можете заходить в игру.
+	TrayTip, SAMP Helper, ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  Г§Г ГЇГіГ№ГҐГ­Г `, Г¬Г®Г¦ГҐГІГҐ Г§Г ГµГ®Г¤ГЁГІГј Гў ГЁГЈГ°Гі.
 	SetTimer, BeforeGame, 1
 }
 return
@@ -4637,13 +4637,13 @@ Settings:
 {
     Gui, Destroy
     Gui, Font, S10 C444444, Comfortaa
-    Gui, Add, Text, x72 y10 w210 h20 , Заполните информацию ниже!
-    Gui, Add, Text, x22 y340 w130 h20 , Марка машины:
+    Gui, Add, Text, x72 y10 w210 h20 , Г‡Г ГЇГ®Г«Г­ГЁГІГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г­ГЁГ¦ГҐ!
+    Gui, Add, Text, x22 y340 w130 h20 , ГЊГ Г°ГЄГ  Г¬Г ГёГЁГ­Г»:
     Gui, Add, Edit, x162 y340 w170 h20 +Center vAutom, % Autom
-    Gui, Add, Text, x22 y370 w120 h20 , Тип транспорта:
+    Gui, Add, Text, x22 y370 w120 h20 , Г’ГЁГЇ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ :
     Gui, Add, Edit, x162 y370 w170 h20 +Center vType, % Type
-    Gui, Add, Button, x91 y410 w170 h30 gSave, Сохранить
-    Gui, Add, Text, x148 y450 w70 h20 +ToolTip, eCoolGe ©
+    Gui, Add, Button, x91 y410 w170 h30 gSave, Г‘Г®ГµГ°Г Г­ГЁГІГј
+    Gui, Add, Text, x148 y450 w70 h20 +ToolTip, eCoolGe В©
     Gui, Show, x488 y184 h479 w361, %pver%
 }
 return
@@ -4653,22 +4653,22 @@ Save:
 	GuiControlGet, Type, , Type
 	GuiControlGet, Autom, , Autom
 	if (Autom = "") {
-		TrayTip, SAMP Helper, Ошибка`, Вы не ввели марку автомобиля.
+		TrayTip, SAMP Helper, ГЋГёГЁГЎГЄГ `, Г‚Г» Г­ГҐ ГўГўГҐГ«ГЁ Г¬Г Г°ГЄГі Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї.
 	} else if (Type = "") {
-	    TrayTip, SAMP Helper, Ошибка`, Вы не ввели тип автомобиля.
+	    TrayTip, SAMP Helper, ГЋГёГЁГЎГЄГ `, Г‚Г» Г­ГҐ ГўГўГҐГ«ГЁ ГІГЁГЇ Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї.
 	} else if (Type > "4") {
-	    TrayTip, SAMP Helper, Ошибка`, Тип должен быть равен одной из этих цифр: 1`,2`,3`,4.
+	    TrayTip, SAMP Helper, ГЋГёГЁГЎГЄГ `, Г’ГЁГЇ Г¤Г®Г«Г¦ГҐГ­ ГЎГ»ГІГј Г°Г ГўГҐГ­ Г®Г¤Г­Г®Г© ГЁГ§ ГЅГІГЁГµ Г¶ГЁГґГ°: 1`,2`,3`,4.
 	} else if (Type = "0") {
-	    TrayTip, SAMP Helper, Ошибка`, Тип не может быть равным нулю.
+	    TrayTip, SAMP Helper, ГЋГёГЁГЎГЄГ `, Г’ГЁГЇ Г­ГҐ Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј Г°Г ГўГ­Г»Г¬ Г­ГіГ«Гѕ.
 	}
 	if ((Autom != "" && Type = "1") || (Autom != "" && Type = "2") || (Autom != "" && Type = "3") || (Autom != "" && Type = "4")) {
 		Sleep, 100
-		TrayTip, SAMP Helper, Просьба немного подождать.`nИдет установка...
+		TrayTip, SAMP Helper, ГЏГ°Г®Г±ГјГЎГ  Г­ГҐГ¬Г­Г®ГЈГ® ГЇГ®Г¤Г®Г¦Г¤Г ГІГј.`nГ€Г¤ГҐГІ ГіГ±ГІГ Г­Г®ГўГЄГ ...
 		Sleep, 100
 		RegWrite, REG_SZ, HKEY_CURRENT_USER, SAMP Helper , Autom, % Autom
 		RegWrite, REG_SZ, HKEY_CURRENT_USER, SAMP Helper , Type, % Type
 		Sleep, 2000
-		TrayTip, SAMP Helper, Установка успешно завершена.`nМожете заходить в игру.
+		TrayTip, SAMP Helper, Г“Г±ГІГ Г­Г®ГўГЄГ  ГіГ±ГЇГҐГёГ­Г® Г§Г ГўГҐГ°ГёГҐГ­Г .`nГЊГ®Г¦ГҐГІГҐ Г§Г ГµГ®Г¤ГЁГІГј Гў ГЁГЈГ°Гі.
 	}
 		SetTimer, BeforeGame, 1
 }
@@ -4679,9 +4679,9 @@ BeforeGame:
     #IfWinActive, GTA:SA:MP
 	{
 	 Sleep, 1000
-     addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Программа успешно запущена!")
-	 addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Версия программы - " pver ".")
-	 addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Об идеях и пожертвованиях писать в группу - {FF0000}vk.com/ecoolge")
+     addChatMessage("{FF0000}[SAMP Helper] {FFFF00}ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  ГіГ±ГЇГҐГёГ­Г® Г§Г ГЇГіГ№ГҐГ­Г !")
+	 addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Г‚ГҐГ°Г±ГЁГї ГЇГ°Г®ГЈГ°Г Г¬Г¬Г» - " pver ".")
+	 addChatMessage("{FF0000}[SAMP Helper] {FFFF00}ГЋГЎ ГЁГ¤ГҐГїГµ ГЁ ГЇГ®Г¦ГҐГ°ГІГўГ®ГўГ Г­ГЁГїГµ ГЇГЁГ±Г ГІГј Гў ГЈГ°ГіГЇГЇГі - {FF0000}vk.com/ecoolge")
 	}
 	SetTimer, BeforeGame, off
 	SetTimer, Game, 1
@@ -4696,9 +4696,9 @@ Game:
 :?://stand:: 
 {
 SendMessage, 0x50,, 0x4190419,, A
-SendInput {F6}/do В руках сумка со стендом.{enter}
+SendInput {F6}/do Г‚ Г°ГіГЄГ Гµ Г±ГіГ¬ГЄГ  Г±Г® Г±ГІГҐГ­Г¤Г®Г¬.{enter}
 sleep 600
-SendInput {F6}/me установил стенд на пол.{enter}
+SendInput {F6}/me ГіГ±ГІГ Г­Г®ГўГЁГ« Г±ГІГҐГ­Г¤ Г­Г  ГЇГ®Г«.{enter}
 sleep 600
 SendInput {F6}/stand{enter}
 }
@@ -4708,57 +4708,57 @@ return
 {
 SendMessage, 0x50,, 0x4190419,, A
 sleep 600
-SendInput {F6}/do На плече сумка с газетами.{enter}
+SendInput {F6}/do ГЌГ  ГЇГ«ГҐГ·ГҐ Г±ГіГ¬ГЄГ  Г± ГЈГ Г§ГҐГІГ Г¬ГЁ.{enter}
 sleep 600
-SendInput {F6}/me засунул руку в сумку и достал одну газету.{enter}
+SendInput {F6}/me Г§Г Г±ГіГ­ГіГ« Г°ГіГЄГі Гў Г±ГіГ¬ГЄГі ГЁ Г¤Г®Г±ГІГ Г« Г®Г¤Г­Гі ГЈГ Г§ГҐГІГі.{enter}
 sleep 600
-SendInput {F6}/me предложил купить одну человеку напротив.{enter}
+SendInput {F6}/me ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГ« ГЄГіГЇГЁГІГј Г®Г¤Г­Гі Г·ГҐГ«Г®ГўГҐГЄГі Г­Г ГЇГ°Г®ГІГЁГў.{enter}
 sleep 500
 ID:=getClosestPlayerId()
 NAME:=getPlayerNameById(getClosestPlayerId())
-addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Вы предложили купить газету " NAME ".")
+addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Г‚Г» ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГ«ГЁ ГЄГіГЇГЁГІГј ГЈГ Г§ГҐГІГі " NAME ".")
 SendInput {F6}/sale %ID%{enter}
 sleep 600
-SendInput {F6}/n /me купил газету.{enter}
+SendInput {F6}/n /me ГЄГіГЇГЁГ« ГЈГ Г§ГҐГІГі.{enter}
 }
 return
 ;#############################
-:?:ЛС::Лос-Сантос
-:?:СФ::Сан-Фиерро
-:?:ЛВ::Лас-Вентурас
-:?:/паломино::д.Palomino Creek
-:?:/ангел::д.Angel Pine
-:?:/монтгомери::д.Montgomery
-:?:/блуберри::д.Blueberry
-:?:/карсон::д.Fort-Carson
-:?:/диллимор::д.Dillimore
-:?:/баранкас::д.Las-Barrancas
-:?:/флора::Santa Flora
-:?:/вайтвуд::WhiteWood
-:?:/темпл::Temple
-:?:/вайнвуд::VineWood
-:?:/корона::El Corona
-:?:/грув::Ganton
-:?:/азтек::Idlewood
+:?:Г‹Г‘::Г‹Г®Г±-Г‘Г Г­ГІГ®Г±
+:?:Г‘Г”::Г‘Г Г­-Г”ГЁГҐГ°Г°Г®
+:?:Г‹Г‚::Г‹Г Г±-Г‚ГҐГ­ГІГіГ°Г Г±
+:?:/ГЇГ Г«Г®Г¬ГЁГ­Г®::Г¤.Palomino Creek
+:?:/Г Г­ГЈГҐГ«::Г¤.Angel Pine
+:?:/Г¬Г®Г­ГІГЈГ®Г¬ГҐГ°ГЁ::Г¤.Montgomery
+:?:/ГЎГ«ГіГЎГҐГ°Г°ГЁ::Г¤.Blueberry
+:?:/ГЄГ Г°Г±Г®Г­::Г¤.Fort-Carson
+:?:/Г¤ГЁГ«Г«ГЁГ¬Г®Г°::Г¤.Dillimore
+:?:/ГЎГ Г°Г Г­ГЄГ Г±::Г¤.Las-Barrancas
+:?:/ГґГ«Г®Г°Г ::Santa Flora
+:?:/ГўГ Г©ГІГўГіГ¤::WhiteWood
+:?:/ГІГҐГ¬ГЇГ«::Temple
+:?:/ГўГ Г©Г­ГўГіГ¤::VineWood
+:?:/ГЄГ®Г°Г®Г­Г ::El Corona
+:?:/ГЈГ°ГіГў::Ganton
+:?:/Г Г§ГІГҐГЄ::Idlewood
 ;#############################
-:?*:.ьт::/mn
-:?*:.й::/q
-:?:)))::/me улыбается.
-:?:(((::/me грустит.
-:?:/ДМ::/n ДМ - Убийство без причины.
-:?:/ДБ::/n ДБ - Убийство машиной.
-:?:/СК::/n СК - Убийство при появлении.
-:?:/ТК::/n ТК - Убийство своих.
-:?:/РП::/n РП - Игра по ролям.
-:?:/МГ::/n МГ - Использование информации из реального мира в игровой чат.
-:?:/ПГ::/n ПГ - Изображение из себя героя(1 против 3).
-:?:/ЗЗ::/n ЗЗ - Зеленая зона. (Запрещено открывать огонь).
+:?*:.ГјГІ::/mn
+:?*:.Г©::/q
+:?:)))::/me ГіГ«Г»ГЎГ ГҐГІГ±Гї.
+:?:(((::/me ГЈГ°ГіГ±ГІГЁГІ.
+:?:/Г„ГЊ::/n Г„ГЊ - Г“ГЎГЁГ©Г±ГІГўГ® ГЎГҐГ§ ГЇГ°ГЁГ·ГЁГ­Г».
+:?:/Г„ГЃ::/n Г„ГЃ - Г“ГЎГЁГ©Г±ГІГўГ® Г¬Г ГёГЁГ­Г®Г©.
+:?:/Г‘ГЉ::/n Г‘ГЉ - Г“ГЎГЁГ©Г±ГІГўГ® ГЇГ°ГЁ ГЇГ®ГїГўГ«ГҐГ­ГЁГЁ.
+:?:/Г’ГЉ::/n Г’ГЉ - Г“ГЎГЁГ©Г±ГІГўГ® Г±ГўГ®ГЁГµ.
+:?:/ГђГЏ::/n ГђГЏ - Г€ГЈГ°Г  ГЇГ® Г°Г®Г«ГїГ¬.
+:?:/ГЊГѓ::/n ГЊГѓ - Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ ГЁГ§ Г°ГҐГ Г«ГјГ­Г®ГЈГ® Г¬ГЁГ°Г  Гў ГЁГЈГ°Г®ГўГ®Г© Г·Г ГІ.
+:?:/ГЏГѓ::/n ГЏГѓ - Г€Г§Г®ГЎГ°Г Г¦ГҐГ­ГЁГҐ ГЁГ§ Г±ГҐГЎГї ГЈГҐГ°Г®Гї(1 ГЇГ°Г®ГІГЁГў 3).
+:?:/Г‡Г‡::/n Г‡Г‡ - Г‡ГҐГ«ГҐГ­Г Гї Г§Г®Г­Г . (Г‡Г ГЇГ°ГҐГ№ГҐГ­Г® Г®ГІГЄГ°Г»ГўГ ГІГј Г®ГЈГ®Г­Гј).
 ;#############################
-:?:/сесть::/anim 57
-:?:/упасть::/anim 70
-:?:/уснуть::/anim 34
-:?:/сдаться::/anim 33
-:?:/охранять::/anim 17
+:?:/Г±ГҐГ±ГІГј::/anim 57
+:?:/ГіГЇГ Г±ГІГј::/anim 70
+:?:/ГіГ±Г­ГіГІГј::/anim 34
+:?:/Г±Г¤Г ГІГјГ±Гї::/anim 33
+:?:/Г®ГµГ°Г Г­ГїГІГј::/anim 17
 ;#############################
 :?:/inf::
 {
@@ -4769,7 +4769,7 @@ return
 }
 return
 ;#############################
-:?:/жб::
+:?:/Г¦ГЎ::
 {
     Sleep, 500
     SendInput, {F6}/mn{enter}
@@ -4783,8 +4783,8 @@ return
 :?:/hhelp::
 {
 Sleep, 1000
-; showDialog(Стиль, Заголовок, Содержание, Кнопка 1, Кнопка 2)
-showDialog(0, "{FFFF00}SAMP Helper", "{FF0000}Команды для использования:`n `n{AFAFAF}* /ДМ,/ДБ,/СК,/ТК,/РП,/МГ,/ПГ,/ЗЗ - получить полное определение`.`n{AFAFAF}* /inf - открыть вашу статистику`.`n{AFAFAF}* /жб - открывает связь с администрацией`.`n{AFAFAF}* /pas - рп отыгровка паспорта`.`n{AFAFAF}* `.ьт и `.й равнозначны командам /mn и /q`.`n{AFAFAF}* ))) - рп отыгровка улыбки`.`n{AFAFAF}* ((( - рп отыгровка грусти`.`n{AFAFAF}* NUM5 - РП отыгровка /lock 1`.`n{AFAFAF}* NUM7 - РП отыгровка /c 060`, т.е. часов(только для вас)`.`n{AFAFAF}* /время - РП отыгровка /c 060`, т.е. часов(для всех)`.`n{AFAFAF}* /сесть,/упасть,/уснуть,/сдаться,/охранять - быстрая анимация`.`n{AFAFAF}*/паломино,/ангел,/монтгомери,/блуберри,/карсон,/диллимор,/баранкас,/флора,/вайтвуд,/корона,/грув - выдает полное название`.`n{AFAFAF}* NUMMINUS - /c 060 + скрин`.`n{AFAFAF}* /qstart - РП старт соц`. опроса`.`n{AFAFAF}* /qend - РП конец соц`.опроса`.", "Закрыть")
+; showDialog(Г‘ГІГЁГ«Гј, Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ, Г‘Г®Г¤ГҐГ°Г¦Г Г­ГЁГҐ, ГЉГ­Г®ГЇГЄГ  1, ГЉГ­Г®ГЇГЄГ  2)
+showDialog(0, "{FFFF00}SAMP Helper", "{FF0000}ГЉГ®Г¬Г Г­Г¤Г» Г¤Г«Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї:`n `n{AFAFAF}* /Г„ГЊ,/Г„ГЃ,/Г‘ГЉ,/Г’ГЉ,/ГђГЏ,/ГЊГѓ,/ГЏГѓ,/Г‡Г‡ - ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ®Г«Г­Г®ГҐ Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­ГЁГҐ`.`n{AFAFAF}* /inf - Г®ГІГЄГ°Г»ГІГј ГўГ ГёГі Г±ГІГ ГІГЁГ±ГІГЁГЄГі`.`n{AFAFAF}* /Г¦ГЎ - Г®ГІГЄГ°Г»ГўГ ГҐГІ Г±ГўГїГ§Гј Г± Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГҐГ©`.`n{AFAFAF}* /pas - Г°ГЇ Г®ГІГ»ГЈГ°Г®ГўГЄГ  ГЇГ Г±ГЇГ®Г°ГІГ `.`n{AFAFAF}* `.ГјГІ ГЁ `.Г© Г°Г ГўГ­Г®Г§Г­Г Г·Г­Г» ГЄГ®Г¬Г Г­Г¤Г Г¬ /mn ГЁ /q`.`n{AFAFAF}* ))) - Г°ГЇ Г®ГІГ»ГЈГ°Г®ГўГЄГ  ГіГ«Г»ГЎГЄГЁ`.`n{AFAFAF}* ((( - Г°ГЇ Г®ГІГ»ГЈГ°Г®ГўГЄГ  ГЈГ°ГіГ±ГІГЁ`.`n{AFAFAF}* NUM5 - ГђГЏ Г®ГІГ»ГЈГ°Г®ГўГЄГ  /lock 1`.`n{AFAFAF}* NUM7 - ГђГЏ Г®ГІГ»ГЈГ°Г®ГўГЄГ  /c 060`, ГІ.ГҐ. Г·Г Г±Г®Гў(ГІГ®Г«ГјГЄГ® Г¤Г«Гї ГўГ Г±)`.`n{AFAFAF}* /ГўГ°ГҐГ¬Гї - ГђГЏ Г®ГІГ»ГЈГ°Г®ГўГЄГ  /c 060`, ГІ.ГҐ. Г·Г Г±Г®Гў(Г¤Г«Гї ГўГ±ГҐГµ)`.`n{AFAFAF}* /Г±ГҐГ±ГІГј,/ГіГЇГ Г±ГІГј,/ГіГ±Г­ГіГІГј,/Г±Г¤Г ГІГјГ±Гї,/Г®ГµГ°Г Г­ГїГІГј - ГЎГ»Г±ГІГ°Г Гї Г Г­ГЁГ¬Г Г¶ГЁГї`.`n{AFAFAF}*/ГЇГ Г«Г®Г¬ГЁГ­Г®,/Г Г­ГЈГҐГ«,/Г¬Г®Г­ГІГЈГ®Г¬ГҐГ°ГЁ,/ГЎГ«ГіГЎГҐГ°Г°ГЁ,/ГЄГ Г°Г±Г®Г­,/Г¤ГЁГ«Г«ГЁГ¬Г®Г°,/ГЎГ Г°Г Г­ГЄГ Г±,/ГґГ«Г®Г°Г ,/ГўГ Г©ГІГўГіГ¤,/ГЄГ®Г°Г®Г­Г ,/ГЈГ°ГіГў - ГўГ»Г¤Г ГҐГІ ГЇГ®Г«Г­Г®ГҐ Г­Г Г§ГўГ Г­ГЁГҐ`.`n{AFAFAF}* NUMMINUS - /c 060 + Г±ГЄГ°ГЁГ­`.`n{AFAFAF}* /qstart - ГђГЏ Г±ГІГ Г°ГІ Г±Г®Г¶`. Г®ГЇГ°Г®Г±Г `.`n{AFAFAF}* /qend - ГђГЏ ГЄГ®Г­ГҐГ¶ Г±Г®Г¶`.Г®ГЇГ°Г®Г±Г `.", "Г‡Г ГЄГ°Г»ГІГј")
 }
 Return
 ;#############################
@@ -4792,18 +4792,18 @@ Return
 {
 SendMessage, 0x50,, 0x4190419,, A
 sleep 600
-SendInput {F6}Да, конечно.{enter}
+SendInput {F6}Г„Г , ГЄГ®Г­ГҐГ·Г­Г®.{enter}
 sleep 600
-SendInput {F6}/me засунул руку в карман и достал оттуда паспорт.{enter}
+SendInput {F6}/me Г§Г Г±ГіГ­ГіГ« Г°ГіГЄГі Гў ГЄГ Г°Г¬Г Г­ ГЁ Г¤Г®Г±ГІГ Г« Г®ГІГІГіГ¤Г  ГЇГ Г±ГЇГ®Г°ГІ.{enter}
 sleep 600
-SendInput {F6}/me передал паспорт человеку напротив.{enter}
+SendInput {F6}/me ГЇГҐГ°ГҐГ¤Г Г« ГЇГ Г±ГЇГ®Г°ГІ Г·ГҐГ«Г®ГўГҐГЄГі Г­Г ГЇГ°Г®ГІГЁГў.{enter}
 sleep 500
 ID:=getClosestPlayerId()
 NAME:=getPlayerNameById(getClosestPlayerId())
-addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Вы показали паспорт " NAME ".")
+addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Г‚Г» ГЇГ®ГЄГ Г§Г Г«ГЁ ГЇГ Г±ГЇГ®Г°ГІ " NAME ".")
 SendInput {F6}/pass %ID%{enter}
 sleep 3000
-SendInput {F6}/me взял паспорт назад и засунул в карман.{enter}
+SendInput {F6}/me ГўГ§ГїГ« ГЇГ Г±ГЇГ®Г°ГІ Г­Г Г§Г Г¤ ГЁ Г§Г Г±ГіГ­ГіГ« Гў ГЄГ Г°Г¬Г Г­.{enter}
 }
 return
 ;#############################
@@ -4811,16 +4811,16 @@ return
 {
 SendMessage, 0x50,, 0x4190419,, A
 sleep 600
-SendInput {F6}/me достал из кармана брюк диктофон.{enter}
+SendInput {F6}/me Г¤Г®Г±ГІГ Г« ГЁГ§ ГЄГ Г°Г¬Г Г­Г  ГЎГ°ГѕГЄ Г¤ГЁГЄГІГ®ГґГ®Г­.{enter}
 sleep 600
-SendInput {F6}/do Диктофон готов к работе.{enter}
+SendInput {F6}/do Г„ГЁГЄГІГ®ГґГ®Г­ ГЈГ®ГІГ®Гў ГЄ Г°Г ГЎГ®ГІГҐ.{enter}
 sleep 600
-SendInput {F6}/me нажал на диктофоне кнопку "Запись".{enter}
+SendInput {F6}/me Г­Г Г¦Г Г« Г­Г  Г¤ГЁГЄГІГ®ГґГ®Г­ГҐ ГЄГ­Г®ГЇГЄГі "Г‡Г ГЇГЁГ±Гј".{enter}
 sleep 500
 ID:=getClosestPlayerId()
 NAME:=getPlayerNameById(getClosestPlayerId())
-addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Вы протянули диктофон к " NAME ".")
-SendInput {F6}/me начал опрос %NAME%{enter}
+addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Г‚Г» ГЇГ°Г®ГІГїГ­ГіГ«ГЁ Г¤ГЁГЄГІГ®ГґГ®Г­ ГЄ " NAME ".")
+SendInput {F6}/me Г­Г Г·Г Г« Г®ГЇГ°Г®Г± %NAME%{enter}
 }
 return
 ;#############################
@@ -4829,42 +4829,42 @@ return
 SendMessage, 0x50,, 0x4190419,, A
 sleep 600
 NAME:=getPlayerNameById(getClosestPlayerId())
-addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Вы убрали диктофон от " NAME ".")
-SendInput {F6}/me закончил опрос %NAME%.{enter}
+addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Г‚Г» ГіГЎГ°Г Г«ГЁ Г¤ГЁГЄГІГ®ГґГ®Г­ Г®ГІ " NAME ".")
+SendInput {F6}/me Г§Г ГЄГ®Г­Г·ГЁГ« Г®ГЇГ°Г®Г± %NAME%.{enter}
 sleep 600
-SendInput {F6}/me нажал на кнопку "Стоп".{enter}
+SendInput {F6}/me Г­Г Г¦Г Г« Г­Г  ГЄГ­Г®ГЇГЄГі "Г‘ГІГ®ГЇ".{enter}
 sleep 600
-SendInput {F6}/do Запись окончена.{enter}
+SendInput {F6}/do Г‡Г ГЇГЁГ±Гј Г®ГЄГ®Г­Г·ГҐГ­Г .{enter}
 sleep 600
-SendInput {F6}/me убрал диктофон в карман.{enter}
+SendInput {F6}/me ГіГЎГ°Г Г« Г¤ГЁГЄГІГ®ГґГ®Г­ Гў ГЄГ Г°Г¬Г Г­.{enter}
 }
 return
 ;#############################
-:?:/время::
+:?:/ГўГ°ГҐГ¬Гї::
 {
 SendMessage, 0x50,, 0x4190419,, A
-SendInput {F6}/me взглянул на часы...{enter}
+SendInput {F6}/me ГўГ§ГЈГ«ГїГ­ГіГ« Г­Г  Г·Г Г±Г»...{enter}
 sleep 300
 SendInput {F6}/c 060{enter}
 sleep 1000
 SendInput {esc}
 sleep 300
-SendInput {F6}/me озвучил данные на часах:{enter}
+SendInput {F6}/me Г®Г§ГўГіГ·ГЁГ« Г¤Г Г­Г­Г»ГҐ Г­Г  Г·Г Г±Г Гµ:{enter}
 sleep 300
 m = 59
 m -= %A_Min%
 s = 60
 s -= %A_Sec%
-SendInput {F6}/do [Время: %A_Hour%:%A_Min%:%A_Sec% | До зарплаты: %m%:%s%]{enter}
+SendInput {F6}/do [Г‚Г°ГҐГ¬Гї: %A_Hour%:%A_Min%:%A_Sec% | Г„Г® Г§Г Г°ГЇГ«Г ГІГ»: %m%:%s%]{enter}
 }
 return
 ;#############################
 Numpad5::
 {
 SendMessage, 0x50,, 0x4190419,, A
-SendInput {F6}/me достал из кармана брелок c надписью "%autom%".{enter}
+SendInput {F6}/me Г¤Г®Г±ГІГ Г« ГЁГ§ ГЄГ Г°Г¬Г Г­Г  ГЎГ°ГҐГ«Г®ГЄ c Г­Г Г¤ГЇГЁГ±ГјГѕ "%autom%".{enter}
 sleep 200
-SendInput {F6}/me нажал на кнопку открытия автомобиля.{enter}
+SendInput {F6}/me Г­Г Г¦Г Г« Г­Г  ГЄГ­Г®ГЇГЄГі Г®ГІГЄГ°Г»ГІГЁГї Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї.{enter}
 sleep 200
 SendInput {F6}/lock %Type%{enter}
 }
@@ -4873,7 +4873,7 @@ return
 Numpad7::
 {
 SendMessage, 0x50,, 0x4190419,, A
-SendInput {F6}/me взглянул на часы...{enter}
+SendInput {F6}/me ГўГ§ГЈГ«ГїГ­ГіГ« Г­Г  Г·Г Г±Г»...{enter}
 sleep 300
 SendInput {F6}/c 060{enter}
 sleep 1000
@@ -4883,7 +4883,7 @@ m = 59
 m -= %A_Min%
 s = 60
 s -= %A_Sec%
-addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Время компьютера: " A_Hour ":" A_Min ":" A_Sec " | До зарплаты: " m ":" s ".")
+addChatMessage("{FF0000}[SAMP Helper] {FFFF00}Г‚Г°ГҐГ¬Гї ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г : " A_Hour ":" A_Min ":" A_Sec " | Г„Г® Г§Г Г°ГЇГ«Г ГІГ»: " m ":" s ".")
 }
 return
 ;#############################
